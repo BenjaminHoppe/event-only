@@ -1,0 +1,10 @@
+<div class="event">
+  <h3>Event: <%= event.name %></h3>
+  <h4>Date: <%= event.date %></h4>
+  <h4>Event capacity: <%= event.capacity %></h4>
+  <h4>Created on: <%= event.created_at %></h4>
+  <h4>Last updated on: <%= event.updated_at %></h4>
+  <h4>City: <%= event.city %></h4>
+  <p><%= link_to 'Edit', edit_event_path(event) %></p>
+  <p><%= link_to 'delete', event_path(event), method: :delete %></p>
+</div>
